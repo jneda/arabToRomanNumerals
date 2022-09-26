@@ -1,5 +1,7 @@
-const sentence = "Hello World";
+function convertToRoman(n) {
+  return "I".repeat(n);
+}
 
 module.exports = {
-  sentence
+  convertToRoman
 }

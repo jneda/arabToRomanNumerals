@@ -1,10 +1,13 @@
 const app = require("../app.js");
 
-describe("test de jest", () => {
-  it("devrait retourner une phrase", () => {
-    expect(app.sentence.length).toBeGreaterThan(0);
+describe("convertToRoman", () => {
+  it("should return the string 'II'", () => {
+    expect(app.convertToRoman(2)).toEqual("II");
   });
-  it("devrait avoir une longueur de 11 caractères", () => {
-    expect(app.sentence.length).toEqual(11);
+  it("should return the string 'III'", () => {
+    expect(app.convertToRoman(3)).toEqual("III");
+  });
+  it("should return the string 'IV'", () => {
+    expect(app.convertToRoman(4)).toEqual("IV");
   });
 });
